@@ -7,7 +7,7 @@ export const TodoList = () => {
   const [page, setPage] = useState(1)
 
 const {data: todoPage, error, isPending } = useQuery({
-  queryKey: ['tasks', 'list', page],
+  queryKey: ['tasks', 'list', {page}],
   queryFn: (meta) => todoListApi.getTodoList({ page }, meta),
 
 })

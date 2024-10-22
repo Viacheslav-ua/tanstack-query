@@ -1,0 +1,385 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "text": "Buy groceries",
+      "done": false
+    },
+    {
+      "id": "2",
+      "text": "Finish the project report",
+      "done": false
+    },
+    {
+      "id": "3",
+      "text": "Schedule a dentist appointment",
+      "done": false
+    },
+    {
+      "id": "4",
+      "text": "Call mom",
+      "done": false
+    },
+    {
+      "id": "5",
+      "text": "Reply to client emails",
+      "done": false
+    },
+    {
+      "id": "6",
+      "text": "Clean the house",
+      "done": false
+    },
+    {
+      "id": "7",
+      "text": "Organize the closet",
+      "done": false
+    },
+    {
+      "id": "8",
+      "text": "Read a chapter of a book",
+      "done": false
+    },
+    {
+      "id": "9",
+      "text": "Walk the dog",
+      "done": false
+    },
+    {
+      "id": "10",
+      "text": "Go for a jog",
+      "done": false
+    },
+    {
+      "id": "11",
+      "text": "Water the plants",
+      "done": false
+    },
+    {
+      "id": "12",
+      "text": "Prepare for the meeting",
+      "done": false
+    },
+    {
+      "id": "13",
+      "text": "Plan a weekend getaway",
+      "done": false
+    },
+    {
+      "id": "14",
+      "text": "Do laundry",
+      "done": false
+    },
+    {
+      "id": "15",
+      "text": "Cook dinner",
+      "done": false
+    },
+    {
+      "id": "16",
+      "text": "Review budget",
+      "done": false
+    },
+    {
+      "id": "17",
+      "text": "Fix the leaking faucet",
+      "done": false
+    },
+    {
+      "id": "18",
+      "text": "Take out the trash",
+      "done": false
+    },
+    {
+      "id": "19",
+      "text": "Write a blog post",
+      "done": false
+    },
+    {
+      "id": "20",
+      "text": "Call the bank",
+      "done": false
+    },
+    {
+      "id": "21",
+      "text": "Send birthday card",
+      "done": false
+    },
+    {
+      "id": "22",
+      "text": "Clean the car",
+      "done": false
+    },
+    {
+      "id": "23",
+      "text": "Research new laptop",
+      "done": false
+    },
+    {
+      "id": "24",
+      "text": "Finish reading the article",
+      "done": false
+    },
+    {
+      "id": "25",
+      "text": "Update resume",
+      "done": false
+    },
+    {
+      "id": "26",
+      "text": "Pay utility bills",
+      "done": false
+    },
+    {
+      "id": "27",
+      "text": "Check tire pressure",
+      "done": false
+    },
+    {
+      "id": "28",
+      "text": "Order new glasses",
+      "done": false
+    },
+    {
+      "id": "29",
+      "text": "Make a haircut appointment",
+      "done": false
+    },
+    {
+      "id": "30",
+      "text": "Prepare presentation slides",
+      "done": false
+    },
+    {
+      "id": "31",
+      "text": "Reply to messages",
+      "done": false
+    },
+    {
+      "id": "32",
+      "text": "Clean out the fridge",
+      "done": false
+    },
+    {
+      "id": "33",
+      "text": "Go grocery shopping",
+      "done": false
+    },
+    {
+      "id": "34",
+      "text": "Plan meals for the week",
+      "done": false
+    },
+    {
+      "id": "35",
+      "text": "Book flight tickets",
+      "done": false
+    },
+    {
+      "id": "36",
+      "text": "Return library books",
+      "done": false
+    },
+    {
+      "id": "37",
+      "text": "Organize the garage",
+      "done": false
+    },
+    {
+      "id": "38",
+      "text": "Buy new shoes",
+      "done": false
+    },
+    {
+      "id": "39",
+      "text": "Watch the documentary",
+      "done": false
+    },
+    {
+      "id": "40",
+      "text": "Backup phone data",
+      "done": false
+    },
+    {
+      "id": "41",
+      "text": "Create a workout plan",
+      "done": false
+    },
+    {
+      "id": "42",
+      "text": "Finish online course",
+      "done": false
+    },
+    {
+      "id": "43",
+      "text": "Buy a birthday gift",
+      "done": false
+    },
+    {
+      "id": "44",
+      "text": "Install software updates",
+      "done": false
+    },
+    {
+      "id": "45",
+      "text": "Plan a family dinner",
+      "done": false
+    },
+    {
+      "id": "46",
+      "text": "Clean the bathroom",
+      "done": false
+    },
+    {
+      "id": "47",
+      "text": "Set up a doctor's appointment",
+      "done": false
+    },
+    {
+      "id": "48",
+      "text": "Check credit card statement",
+      "done": false
+    },
+    {
+      "id": "49",
+      "text": "Attend yoga class",
+      "done": false
+    },
+    {
+      "id": "50",
+      "text": "Donate old clothes",
+      "done": false
+    },
+    {
+      "id": "51",
+      "text": "Start learning Spanish",
+      "done": false
+    },
+    {
+      "id": "52",
+      "text": "Organize digital files",
+      "done": false
+    },
+    {
+      "id": "53",
+      "text": "Book hotel reservations",
+      "done": false
+    },
+    {
+      "id": "54",
+      "text": "Paint the bedroom",
+      "done": false
+    },
+    {
+      "id": "55",
+      "text": "Buy new curtains",
+      "done": false
+    },
+    {
+      "id": "56",
+      "text": "Replace light bulbs",
+      "done": false
+    },
+    {
+      "id": "57",
+      "text": "Make a playlist for the trip",
+      "done": false
+    },
+    {
+      "id": "58",
+      "text": "Go to the gym",
+      "done": false
+    },
+    {
+      "id": "59",
+      "text": "Send thank you notes",
+      "done": false
+    },
+    {
+      "id": "60",
+      "text": "Plan a birthday party",
+      "done": false
+    },
+    {
+      "id": "61",
+      "text": "Buy office supplies",
+      "done": false
+    },
+    {
+      "id": "62",
+      "text": "Organize a movie night",
+      "done": false
+    },
+    {
+      "id": "63",
+      "text": "Update phone contacts",
+      "done": false
+    },
+    {
+      "id": "64",
+      "text": "Write in journal",
+      "done": false
+    },
+    {
+      "id": "65",
+      "text": "Find a new recipe to try",
+      "done": false
+    },
+    {
+      "id": "66",
+      "text": "Set up a budget for next month",
+      "done": false
+    },
+    {
+      "id": "67",
+      "text": "Watch tutorial on video editing",
+      "done": false
+    },
+    {
+      "id": "68",
+      "text": "Send holiday cards",
+      "done": false
+    },
+    {
+      "id": "69",
+      "text": "Buy a new notebook",
+      "done": false
+    },
+    {
+      "id": "70",
+      "text": "Clean the windows",
+      "done": false
+    },
+    {
+      "id": "71",
+      "text": "Research travel destinations",
+      "done": false
+    },
+    {
+      "id": "72",
+      "text": "Make a dentist appointment",
+      "done": false
+    },
+    {
+      "id": "73",
+      "text": "Take a break to meditate",
+      "done": false
+    },
+    {
+      "id": "74",
+      "text": "Plan a weekend hike",
+      "done": false
+    },
+    {
+      "id": "75",
+      "text": "Watch the new movie release",
+      "done": false
+    },
+    {
+      "id": "76",
+      "text": "Write a thank you email",
+      "done": false
+    }
+  ]
+  
+}

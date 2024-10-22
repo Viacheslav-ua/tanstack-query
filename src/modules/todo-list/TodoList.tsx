@@ -1,11 +1,14 @@
 import { useQuery } from "@tanstack/react-query"
 import { todoListApi } from "./api"
+import { useState } from "react"
 
 export const TodoList = () => {
 
-const {data, error, isPending } = useQuery({
-  queryKey: ['tasks', 'list'],
-  queryFn: todoListApi.getTodoList
+  const [page, setPage] = useState(1)
+
+const {data: todoPage, error, isPending } = useQuery({
+  queryKey: ['tasks', 'list', page],
+  queryFn: (meta) => todoListApi.getTodoList({ page }, meta),
 
 })
 
@@ -17,13 +20,38 @@ if (error) return <div>Error: {JSON.stringify(error)}</div>
       <h1 className="text-3xl underline mb-5 capitalize">To do list</h1>
 
       <div className="flex flex-col gap-4">
-        {data?.map((task) => (
+        {todoPage?.data.map((task) => (
           <div 
           className="border border-gray-300 p-3 rounded"
           key={task.id}
           >{task.text}</div>
         ))}
       </div>
+
+      <div className="flex gap-3 mt-5">
+        <button 
+        className="p-2 border rounded border-teal-500"
+        onClick={() => setPage(1)}
+      >1</button>
+
+      <button 
+        className="p-2 border rounded border-teal-500"
+        onClick={() => setPage(p => Math.min(todoPage.pages, p + 1))}
+      >next</button>
+
+      <button 
+        className="p-2 border rounded border-teal-500"
+        onClick={() => setPage(p => Math.max(1, p - 1))}
+      >prev</button>
+        
+      <button 
+        className="p-2 border rounded border-teal-500"
+        onClick={() => setPage(todoPage.last)}
+      >last</button>
+
+      <p>Page: {page}</p>
+      </div>
+      
       
     </div>
   )

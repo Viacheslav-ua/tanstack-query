@@ -23,9 +23,6 @@ export const TodoList = () => {
   })
 
 
-  console.log(status, fetchStatus);
-
-
   // if (status === 'pending' && fetchStatus === 'fetching') return (<div className="text-3xl font-bold text-green-700">Loading...</div>)
   if (isLoading) return (<div className="text-3xl font-bold text-green-700">Loading...</div>)
   if (error) return <div>Error: {JSON.stringify(error)}</div>
@@ -39,8 +36,8 @@ export const TodoList = () => {
         {todoPage?.map((task) => (
           <div
             className="border border-gray-300 p-3 rounded"
-            key={task.id}
-          >{task.text}</div>
+            key={task?.id}
+          >{task?.text}</div>
         ))}
       </div>
 

@@ -9,12 +9,13 @@ export const TodoList = () => {
   const { data: todoPage, error, isPending, isFetching, isLoading,
     status, fetchStatus, isPlaceholderData, fetchNextPage, hasNextPage,
     isFetchingNextPage } = useInfiniteQuery({
-      queryKey: ['tasks', 'list'],
-      queryFn: (meta) => todoListApi.getTodoList({ page: meta.pageParam }, meta),
+      ...todoListApi.getTodoListInfiniteQueryOptions(),
+      // queryKey: ['tasks', 'list'],
+      // queryFn: (meta) => todoListApi.getTodoList({ page: meta.pageParam }, meta),
       enabled,
-      initialPageParam: 1,
-      getNextPageParam: (result) => result.next,
-      select: result => result.pages.map(page => page.data).flat(),
+      // initialPageParam: 1,
+      // getNextPageParam: (result) => result.next,
+      // select: result => result.pages.map(page => page.data).flat(),
     })
 
   const cursorRef = useIntersection(() => {

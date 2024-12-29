@@ -7,6 +7,7 @@ type TaskDto = {
   id: string
   text: string
   done: boolean
+  userId: string
 }
 
 export type PaginatedResult<T> = {
@@ -30,11 +31,11 @@ export const todoListApi = {
       .then((response) => response.json()) as Promise<PaginatedResult<TaskDto>>
   },
 
-  getTodoListQueryOptions(page: { page: number }) {
+  getTodoListQueryOptions() {
     return queryOptions({
-      queryKey: ['tasks', 'list', page],
-      queryFn: (meta) => jsonApiInstance<PaginatedResult<TaskDto>>(
-        `/tasks?_page=${page}&_per_page=10`,
+      queryKey: ['tasks', 'list'],
+      queryFn: (meta) => jsonApiInstance<TaskDto[]>(
+        `/tasks`,
         { signal: meta.signal },
       ),
     })
@@ -51,5 +52,24 @@ export const todoListApi = {
       getNextPageParam: (result) => result.next,
       select: result => result.pages.map(page => page.data).flat(),
     })
-  }
+  },
+
+  createTodo: (data: TaskDto) => {
+
+    return jsonApiInstance('/tasks', { 
+      method: 'POST',
+      json: data 
+    })
+  },
+  updateTodo: (id: string, data: Partial<TaskDto>) => {
+    return jsonApiInstance(`/tasks/${id}`, { 
+      method: 'PATCH',
+      json: data 
+    })
+  },
+  deleteTodo: (id: string) => {
+    return jsonApiInstance(`/tasks/${id}`, { 
+      method: 'DELETE', 
+    })
+  },
 } 
